@@ -1,8 +1,8 @@
 import { createStore } from 'vuex';
 
 // My custom modules
-// import exampleModule from './module-template';
-// import { ExampleStateInterface } from './module-template/state';
+import placesModule from './places';
+import { PlacesState } from './places/state';
 
 
 export interface StateInterface {
@@ -10,12 +10,12 @@ export interface StateInterface {
   // example: ExampleStateInterface;
   // Declared as unknown to avoid linting issue. Best to strongly type as per the line above.
   // example: ExampleStateInterface
-  example: unknown
+  places: PlacesState
 }
 
 export default createStore<StateInterface>({
   modules: {
     // example: exampleModule
-    example: {}
+    places: placesModule
   }
 })
