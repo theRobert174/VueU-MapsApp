@@ -1,14 +1,18 @@
 import { usePlacesStore } from '@/composables';
-import { defineComponent } from 'vue';
+import { defineComponent, onMounted, ref } from 'vue';
 
 export default defineComponent({
     name: 'MapView',
     setup() {
+        const mapElement = ref<HTMLDivElement>();
+        const { userLocation, isUserLocationReady } = usePlacesStore()
 
-       const { isLoading, userLocation, isUserLocationReady } = usePlacesStore()
+        onMounted(() => {
+            console.log(mapElement.value)
+        })
 
         return {
-            isLoading, userLocation, isUserLocationReady
+            isUserLocationReady, mapElement
         } 
     }
 });
