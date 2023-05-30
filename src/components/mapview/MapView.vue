@@ -18,7 +18,6 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: red;
 }
 .loading-map{
   background-color: rgba(0, 0, 0, 0.8);
