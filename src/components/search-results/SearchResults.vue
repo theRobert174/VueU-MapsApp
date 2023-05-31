@@ -5,7 +5,7 @@
             <h5>Nombre del lugar</h5>
             <p>In adipisicing dolor magna enim ex nulla in ad amet.</p>
             <div align="right">
-                <button class="btn btn-outline-primary">
+                <button class="btn btn-outline-primary btn-sm">
                     Direcciones
                 </button>
             </div>
@@ -14,7 +14,7 @@
             <h5>Nombre del lugar</h5>
             <p>In adipisicing dolor magna enim ex nulla in ad amet.</p>
             <div align="right">
-                <button class="btn btn-outline-primary">
+                <button class="btn btn-outline-primary btn-sm">
                     Direcciones
                 </button>
             </div>
@@ -23,7 +23,7 @@
             <h5>Nombre del lugar</h5>
             <p>In adipisicing dolor magna enim ex nulla in ad amet.</p>
             <div align="right">
-                <button class="btn btn-outline-primary">
+                <button class="btn btn-outline-primary btn-sm">
                     Direcciones
                 </button>
             </div>
@@ -35,5 +35,11 @@
 
 li{
     cursor: pointer;
+}
+h5{
+    font-size: 15px !important;
+}
+p{
+    font-size: 10px !important;
 }
 </style>
