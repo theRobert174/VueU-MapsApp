@@ -11,6 +11,11 @@ export const useMapStore = () => {
         map: computed(() => store.state.map.map),
         distance: computed(() => store.state.map.distance),
         duration: computed(() => store.state.map.duration),
+        //Mutations
         setMap: (map: Mapboxgl.Map) => store.commit('map/setMap', map),
+        //Actions
+
+        //Getters
+        isMapReady: computed<boolean>(() => store.getters['map/isMapReady'])
     }
 }
