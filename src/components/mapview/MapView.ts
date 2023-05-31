@@ -27,12 +27,12 @@ export default defineComponent({
             .setHTML(`
                 <h4>Aqui estoy</h4>
                 <p>Actualmente en Moscu</p>
-            `)
+            `);
 
             const myLocationMarker = new Mapboxgl.Marker()
             .setLngLat(userLocation.value)
             .setPopup(myLocationPopup)
-            .addTo(map)
+            .addTo(map);
 
             setMap(map);
         }
