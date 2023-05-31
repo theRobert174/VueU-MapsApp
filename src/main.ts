@@ -4,7 +4,8 @@ import router from './router'
 import store from './store'
 
 import mapboxgl from 'mapbox-gl';
-mapboxgl.accessToken = 'pk.eyJ1Ijoicm9iZXJ0LXJhbmQyMDIzIiwiYSI6ImNsaWFrMThreTAzcDUzZHVsY3Izd3F2Y3AifQ.gan9Fpi_lPwQDGE-6FlsoQ';
+//mapboxgl.accessToken = 'pk.eyJ1Ijoicm9iZXJ0LXJhbmQyMDIzIiwiYSI6ImNsaWFrMThreTAzcDUzZHVsY3Izd3F2Y3AifQ.gan9Fpi_lPwQDGE-6FlsoQ';
+mapboxgl.accessToken = 'pk.eyJ1Ijoicm9iZXJ0LXJhbmQyMDIzIiwiYSI6ImNsaWF2anNpeDAyNGEzZnF4cGNqa21xYTIifQ.UtWeswmxBOkOzEdFpT5vyw';
 
 if(!navigator.geolocation){
     alert('Tu navegador no soporta GeoLocation')
