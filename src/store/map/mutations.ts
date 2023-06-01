@@ -11,6 +11,16 @@ const mutation: MutationTree<MapState> = {
         // a line to prevent linter errors
         state.map = map;
     },
+
+    setDistanceDuration(state: MapState, {distance, duration}:{distance: number, duration: number}){
+        let kms = distance / 1000;
+        kms = Math.round(kms*100);
+        kms /= 100;
+
+        state.distance = kms;
+
+        state.duration = Math.floor(duration/60);
+    },
     setPlaceMarkers(state:MapState, places: Feature[]){
 
         //Borrar marcadores
