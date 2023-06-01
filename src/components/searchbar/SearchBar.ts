@@ -10,7 +10,7 @@ export default defineComponent({
         const { searchPlacesByTerm } = usePlacesStore()
 
         const debounceTimeout = ref();
-        const debounceValue = ref('Hola');
+        const debounceValue = ref('');
 
         return {
             debounceValue,
