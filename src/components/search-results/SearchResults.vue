@@ -14,7 +14,8 @@
             <p>{{place.place_name}}</p>
             <div align="right">
                 <button class="btn btn-outline-primary btn-sm" 
-                    :class="( place.id === activePlace ) ? 'btn-outline-light' : 'btn-outline-primary'">
+                    :class="( place.id === activePlace ) ? 'btn-outline-light' : 'btn-outline-primary'"
+                    @click.self="getRouteDirections(place)">
                     Direcciones
                 </button>
             </div>
