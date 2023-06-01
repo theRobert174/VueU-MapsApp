@@ -12,8 +12,8 @@ const actions: ActionTree<MapState, StateInterface> = {
     async getRouteBetweenPoints( { commit }, {start, end}:{start: LngLat, end: LngLat}   ) {
         // a line to prevent linter errors
         const resp = await directionsApi.get<DirectionsResponse>(`/${start.join(',')};${end.join(',')}`);
-        console.log(resp.data.routes[0].geometry.coordinates);
-        
+        //console.log(resp.data.routes[0].geometry.coordinates);
+        commit('setRoutePolyline', resp.data.routes[0].geometry.coordinates)
     }
 }
 
